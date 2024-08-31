@@ -1,0 +1,150 @@
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+}
+a{
+    width: 200px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+.logo{
+    position: fixed;
+    top: 3%;
+}
+a:hover{
+    color: white;
+}
+.navbar-toggler{
+    position: fixed;
+    right: 10%;
+}
+.nav button{
+    z-index: 10000;
+}
+.collapse{
+    margin-left: 55%;
+}
+.slide{
+    width: 100%;
+}
+.item{
+   display: inline-block;
+    overflow: hidden;
+    width: 15%;
+    height: 50%;
+    position: absolute;
+    left: 60%;
+    top: 27%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    box-shadow: 0 30px 30px rgb(65, 64, 64);
+    transition: all 1s; 
+}
+.text{
+    display: none;
+    animation: showcontent 1s ease-in-out forwards;
+}
+.item:nth-child(1) .text,
+.item:nth-child(2) .text
+{
+    display: block;
+    position: relative;
+    top: 35%;
+    left: 10%;
+
+}
+.text a{
+    width: 300px;
+    display: block;
+    border: solid white;
+    padding: 20px 0 20px 90px;
+    margin: 4% 7%;
+}
+.item:nth-child(1), 
+.item:nth-child(2){ 
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+     transform: translateY(0);   
+    margin-top: 0px;  
+    border-radius: 0;  
+    box-shadow: none; 
+   
+}
+
+.item:nth-child(4){
+    left: 80%;
+}
+.item:nth-child(5){
+    left: 100%;
+}
+.btns{
+    position: fixed;
+    top:90%;
+    left: 50%;
+}
+.btns .btn{
+    margin-right: 40px;
+    border-radius: 50%;
+    border-color:grey ;
+}
+@keyframes showcontent {  
+    from {  
+        opacity: 0;  
+        transform: translateY(100px);  
+        filter: blur(20px);  
+    }  
+
+    to {  
+        opacity: 1;  
+        transform: translateY(0);  
+        filter: blur(0);  
+    }  
+}  
+@media screen  and (max-width: 992px) {
+    .navbar-nav{
+        background-color: rgb(0,0,0,.6);
+        width: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+}
+.btn-secondary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+.dropdown-menu{
+    position: relative;
+    left: -10%;
+}
+.side{
+    position: fixed;
+    top: 80%;
+    left:95% ;
+}
+
+.side-show{
+    position: fixed;
+    top: 80%;
+    left: 83%;
+    display: none;
+}
+

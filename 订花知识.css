@@ -1,0 +1,100 @@
+.container{
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    background-color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.nav-link{
+    width: 90px;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: large;
+    font-weight: bolder;
+}
+.logo{
+    width: 50%;
+    position: fixed;
+    top: 3%;
+    left: 0;
+}
+.nav-link:hover{
+    color:black;
+}
+.navbar-toggler{
+    position: fixed;
+    right: 10%;
+}
+.nav button{
+    z-index: 10000;
+}
+.collapse{
+ 
+    margin-left: 40%;
+}
+.menu li{
+    list-style: none;
+    
+}
+.menu-content{
+   
+    margin-left: 0;
+}
+.menu-cover{
+    width: 100%;
+    margin-top: 10%;
+   
+}
+.card div div{
+    width: 30%;
+    overflow: hidden;
+}
+.card div div img{
+    width: 100%;;
+}
+.tips{
+    padding: 5% 25%;
+    background-color: rgb(207, 248, 244,.4);
+}
+.title{
+    margin: 5% auto;
+}
+.foot{
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 3% ;
+    width: 90%;
+    border-top: solid 1px;
+    height: 15%;
+    text-align: center;
+}
+@media screen  and (max-width: 992px) {
+    .navbar-nav{
+        background-color: rgb(0,0,0,.6);
+        width: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+}
+.side{
+    position: fixed;
+    top: 70%;
+    left:95% ;
+}
+
+.side-show{
+    position: fixed;
+    top: 70%;
+    left: 83%;
+    display: none;
+}
+
